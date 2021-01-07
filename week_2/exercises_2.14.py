@@ -1,5 +1,6 @@
 #exercises week 2
 
+
 word_1 = "All"
 word_2 = "work"
 word_3 = "and"
@@ -18,10 +19,35 @@ print(6*(1-2))
 bruce = 6
 print(bruce+4)
 
-final_amount =
-P = principal amount
-r = annual nominal interst rate
-n = number of times the interest is compounded per year
-t = number of years
+## exercise 5
+principal_amount = 5000
+annual_nominal_interst_rate = 1.4
+number_compounded_per_year = 3
+number_of_years = 36
 
-A = P (1+(r/n)^n*t
+final_amount = principal_amount*(1+annual_nominal_interst_rate/number_compounded_per_year)**number_compounded_per_year*number_of_years
+print(final_amount)
+
+## exercise 6
+print(5%2)
+print(9%5)
+print(15%12)
+print(12%15)
+print(6%6)
+print(0%7)
+
+
+## exercise 7
+time_right_now = 14
+alarm_clock_time = 51
+time_till_alarm_precise = time_right_now + alarm_clock_time / 24
+print(time_till_alarm_precise)
+
+time_till_alarm_hours = time_right_now + alarm_clock_time // 24
+print(time_till_alarm_hours)
+
+## exercise 8
+time = (int(input('What is the current time?')))
+waiting = (int(input('How many hours do you want to wait?')))
+end_time = (time + waiting) / 24
+print(end_time)
