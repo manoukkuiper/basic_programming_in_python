@@ -54,3 +54,5 @@ alex = turtle.Turtle()
 tess.forward(80)
 tess.left(120)
 tess.forward(80)
+
+type(tess)

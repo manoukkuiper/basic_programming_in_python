@@ -1,13 +1,42 @@
 import turtle
 
 screen = turtle.Screen()
-don = turtle.Turtle()   # Starry, starry night
+pirate = turtle.Turtle()
+screen.bgcolor("HotPink")
 
-don.left(36)
-for _ in range(5):
-    don.forward(100)
-    don.left(180 - 36)
+# color and speed of pirate and house
+pirate.color("blue")
+pirate.shape("turtle")
+pirate.speed(3)
+pirate.fillcolor('yellow')
+pirate.begin_fill()
+pirate.end_fill()
 
-don.hideturtle()
+pirate.left(180)
+pirate.forward(100)
+pirate.left(-135)
+pirate.forward(100)
+pirate.left(135)
+pirate.forward(100)
+pirate.left(135)
+pirate.forward(100)
+pirate.left(135)
+pirate.forward(100)
+pirate.left(45)
+pirate.forward(100)
+pirate.left(90)
+pirate.forward(100)
+pirate.left(45)
+pirate.forward(100)
+pirate.left(90)
+pirate.forward(100)
 
-screen.exitonclick()
+
+screen.mainloop()
+
+
+
+
+
+
+

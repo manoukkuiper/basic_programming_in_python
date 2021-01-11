@@ -202,10 +202,116 @@ for _ in range(12):
 
 screen.exitonclick()
 
-# exercise 22
+# exercise 22 - done
 
+# exercise 23
+numbers = [12, 3, 4, 5, 6]
+count = 0
 
+for number in numbers:
+    if number % 2 == 1
+        count += 1
+    if number % 2 == 0
+        continue
 
+# exercise 23
+numbers = [13, -3, 13, 7, -25]
+count = 0
+
+for number in numbers:
+    if number % 2 != 0:
+        count += 1
+
+print("There are", count, "odd numbers in the list")
+
+# exercise 24
+sum = 0
+
+for number in numbers:
+    if number % 2 == 0:
+        sum += number
+print("The sum of the even number is:", sum)
+
+# exercise 25
+sum_negatives = 0
+
+for number in numbers:
+    if number < 0:
+        sum_negatives += number
+print("The sum of the negative numbers is:", sum_negatives)
+
+# exercise 26
+words = ["hello", "goodbye", "ciao", "ola", "goedemorgen", "goedenavond"]
+words_length_5_count = 0
+
+for word in words:
+    if len(word) == 5:
+        words_length_5_count += 1
+print("Count of words with a length of 5 is:", words_length_5_count)
+
+# exercise 27
+sum_odd_numbers_without_first = 0
+for number in numbers:
+    if number % 2 == 0:
+        break
+    sum_odd_numbers_without_first += number
+print("The sum of odd numbers without the first one is:", sum_odd_numbers_without_first)
+
+# exercise 28
+names = ["quinn", "finn", "rachel", "sam", "artie", "mercedes"]
+count_names = 0
+
+for name in names:
+    if name == "sam":
+        break
+    count_names += 1
+print("How many names are there until Sam comes:", count_names)
+
+# exercise 29
+import math
+
+n = 25
+threshold = 1e-7
+approximation = n / 25
+
+while True:
+    better = (approximation + (n / approximation)) / 2
+    print("approximation:", better)
+    if abs(approximation - better) < threshold:
+        print("Best:", better)
+        break
+    approximation = better
+
+# exercise 31
+n = 12
+
+for number_prime in range(2, n // 2):
+    if n % number_prime == 0:
+        print(number_prime, "is a divisor of", n, "therefore it is not a prime")
+        print(False)
+        break
+    else:
+        print("No divisor found for", n, "therefore it is a prime number")
+        print(True)
+
+# exercise 32
+import turtle
+
+screen = turtle.Screen()
+pirate = turtle.Turtle()
+
+steps = [(160, 20), (-43, 10), (270, 8), (-43, 12)]
+
+for angle, distance in steps:
+    pirate.left(angle)
+    pirate.forward(distance)
+
+# exercise 33
+pirate.left(90)
+pirate.forward(100)
+pirate.right(45)
+pirate.forward(100)
+pirate.left(45)
 
 
 
