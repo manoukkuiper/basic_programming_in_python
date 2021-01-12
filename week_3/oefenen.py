@@ -1,42 +1,23 @@
 import turtle
 
 screen = turtle.Screen()
-pirate = turtle.Turtle()
-screen.bgcolor("HotPink")
+nick = turtle.Turtle()
+colors = ["yellow", "green", "red", "pink", "purple", "blue"]
 
-# color and speed of pirate and house
-pirate.color("blue")
-pirate.shape("turtle")
-pirate.speed(3)
-pirate.fillcolor('yellow')
-pirate.begin_fill()
-pirate.end_fill()
+def draw_star(animal, degrees, size):
+    for _ in range(5):
+        animal.pensize(10)
+        animal.color(colors[_ % len(colors)])
+        animal.forward(size)
+        animal.left(degrees)
 
-pirate.left(180)
-pirate.forward(100)
-pirate.left(-135)
-pirate.forward(100)
-pirate.left(135)
-pirate.forward(100)
-pirate.left(135)
-pirate.forward(100)
-pirate.left(135)
-pirate.forward(100)
-pirate.left(45)
-pirate.forward(100)
-pirate.left(90)
-pirate.forward(100)
-pirate.left(45)
-pirate.forward(100)
-pirate.left(90)
-pirate.forward(100)
+def draw_multiple_stars(animal, forward, turn):
+    for _ in range(5):
+        draw_star(animal, -144, 100)
+        animal.penup()
+        animal.forward(forward)
+        animal.right(turn)
+        nick.pendown()
 
-
-screen.mainloop()
-
-
-
-
-
-
-
+window.mainloop()
+draw_multiple_stars(nick, 350, 144)
